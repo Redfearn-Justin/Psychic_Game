@@ -7,13 +7,13 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
     var guessRemain = 10;
-    var guessCurrent = "";
     var lettersGuessed = [];
     var computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
     // Functions
     //===================================
     document.onkeyup = function (event) {
+
         var guessCurrent = event.key;
 
         if (lettersGuessed.indexOf(guessCurrent) < 0 && choices.indexOf(guessCurrent) >= 0) {
@@ -24,10 +24,9 @@ $(document).ready(function() {
 
         if (computerLetter == guessCurrent) {
             wins++;
-            // Guesses++;
             lettersGuessed = [];
             computerLetter = choices[Math.floor(Math.random() * choices.length)];
-            document.getElementById("Wins").textContent = + wins;
+            document.getElementById("Wins").textContent = "Wins: " + +wins;
         }
 
         if (guessRemain == 0) {
@@ -35,11 +34,11 @@ $(document).ready(function() {
             guessRemain = 10;
             lettersGuessed = [];
             computerLetter = choices[Math.floor(Math.random() * choices.length)];
-            document.getElementById("Losses").textContent = + losses;
+            document.getElementById("Losses").textContent = "Losses: " + +losses;
         }
 
 
-        document.getElementById("Guesses").textContent = + guessRemain;
+        document.getElementById("Guesses").textContent = "Guesses Left: " + +guessRemain;
         document.getElementById("lettersGuessed").textContent = lettersGuessed;
     }
     console.log(computerChoice)
