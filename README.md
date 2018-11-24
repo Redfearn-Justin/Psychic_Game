@@ -1,10 +1,10 @@
-# Psychic_Game
+# Houndini's Wonderous Word Extravaganza (The Game)
 
 ## Overview
 
 ### Project Insight
 
-   A basic javascript application to test your wit against that of the "computer"! The basis of the game is simple: With 10 tries, your goal is to guess the letter the computer has randomly selected before you reach 0 guesses!
+   A basic javascript application to test your wit against that of the specter of Harry Houndini (aka The computer)! The basis of the game is simple: With 10 tries, your goal is to guess the letter the Houdini has randomly selected before you reach 0 guesses!
 
 ### Technologies Utilized
 
@@ -18,4 +18,4 @@
 
 * Guess correctly? Your score goes up! Good job.
 
-* Run out of guesses? The computer has won but don't fret, the game refreshes automatically. Get back out there and try your hand against the computer again!
+* Run out of guesses? Houdini has won but don't fret, the game refreshes automatically. Get back out there and try your hand against the computer again!
